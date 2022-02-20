@@ -1,0 +1,234 @@
+
+body{
+    height: 1100px;
+}
+/* nav{
+border: black 2px groove;
+background-color: mediumaquamarine;
+background-image: linear-gradient(mediumaquamarine,#FFFDD0);
+grid-area: header;
+display: grid;
+grid-template-columns: 25% 25% 12.5% 12.5% 12.5% 12.5%;
+grid-template-rows: 100%;
+grid-template-areas: 
+  "logo - about resume contact other"
+;
+}
+logo{
+    grid-area: logo;
+    
+  
+  }
+  .about{
+    grid-area: about;
+  }
+  .resume{
+    grid-area: resume;
+  
+  }
+  .contact{
+    grid-area: contact;
+  
+  }
+  .other{
+    grid-area: other;
+  
+  } */
+
+  main{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+      grid-template-areas:
+        "img h1"
+        "img h2"
+        "img p1"
+        "list list"
+        "end end"
+      ;
+      text-align: center;
+      height:100%;
+  }
+  img{
+      grid-area: img;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      
+    
+  }
+  .first{
+      grid-area: h1;
+  }
+  .second{
+      grid-area: h2;
+  }
+  .p1{
+      grid-area: p1;
+  }
+  .p2{
+     grid-area: list;
+
+  }
+  .end{
+      grid-area: end;
+  }
+
+
+/* @media (min-width:600px) {
+    body{
+        height: 1000px;
+    } */
+    /* nav{
+    border: black 2px groove;
+    background-color: mediumaquamarine;
+    background-image: linear-gradient(mediumaquamarine,#FFFDD0);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 25% 25% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "logo - about resume contact other"
+    ;
+    }
+    logo{
+        grid-area: logo;
+        
+      
+      }
+      .about{
+        grid-area: about;
+      }
+      .resume{
+        grid-area: resume;
+      
+      }
+      .contact{
+        grid-area: contact;
+      
+      }
+      .other{
+        grid-area: other;
+      
+      } */
+    
+      /* main{
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: 20% 20% 20% 20% 20%;
+          grid-template-areas:
+            "img h1"
+            "img h2"
+            "img p1"
+            "list list"
+            "end end"
+          ;
+          text-align: center;
+          height:100%;
+      }
+      img{
+          grid-area: img;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          
+        
+      }
+      .first{
+          grid-area: h1;
+      }
+      .second{
+          grid-area: h2;
+      }
+      .p1{
+          grid-area: p1;
+      }
+      .p2{
+         grid-area: list;
+    
+      }
+      .end{
+          grid-area: end;
+      }
+    
+} */
+
+@media (max-width:500px) {
+    body{
+        height: 1500px;
+    }
+    /* nav{
+    border: black 2px groove;
+    background-color: mediumaquamarine;
+    background-image: linear-gradient(mediumaquamarine,#FFFDD0);
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 25% 25% 12.5% 12.5% 12.5% 12.5%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "logo - about resume contact other"
+    ;
+    }
+    logo{
+        grid-area: logo;
+        
+      
+      }
+      .about{
+        grid-area: about;
+      }
+      .resume{
+        grid-area: resume;
+      
+      }
+      .contact{
+        grid-area: contact;
+      
+      }
+      .other{
+        grid-area: other;
+      
+      } */
+    
+      main{
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: 10% 20% 20% 20% 20% 10% ;
+          grid-template-areas:
+            "h1"
+            "img"
+            "h2"
+            "p1"
+            "list"
+            "last"
+
+          ;
+          text-align: center;
+          height:100%;
+      }
+      img{
+          grid-area: img;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          
+        
+      }
+      .first{
+          grid-area: h1;
+      }
+      .second{
+          grid-area: h2;
+      }
+      .p1{
+          grid-area: p1;
+      }
+      .p2{
+         grid-area: list;
+    
+      }
+      .end{
+          grid-area: last;
+      }
+    
+}
