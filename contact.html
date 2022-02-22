@@ -6,22 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="results" href="results.html">
+    
 </head>
 <body>
-    <input type="text"> 
-    <textarea name="placeholder" id="placeholder" cols="30" rows="10">Comments</textarea>
-   <div class="checkboxes">
-    <h1>How did you hear about me?</h1>
-    <input type="checkbox" name="Classmate" id="classmate">
+    <div class="container">
+        <form action="results.html" method="GET" enctype="multipart/form-data">
 
-    <input type="checkbox" name="Resume Submission" id="resume">
-
-    <input type="checkbox" name="LinkedIn" id="linkedin">
-    
-    <input type="checkbox" name="Coding Academy Rec" id="coding academy rec">
-   </div>
        
+    <h1>Reach out!</h1>
 
+    <div class="email-comments">
+
+    <label for="email">Your email</label> 
+
+    <input class="email" type="text" id="Email" name="Email"> 
+
+    <label for="placeholder">Your comments</label>
     
+    <textarea class="comments" name="placeholder" id="placeholder" cols="30" rows="10"></textarea>
+    </div>  
+   <div class="checkboxes">
+
+    <h2>How did you hear about me?</h2>
+
+    <input class="box" type="checkbox" name="Classmate" id="classmate">Classmate</input>
+
+    <input class="box" type="checkbox" name="Resume Submission" id="resume">Resume Submission</input>
+
+    <input class="box" type="checkbox" name="LinkedIn" id="linkedin">LinkedIn</input>
+    
+    <input class="box" type="checkbox" name="Coding Academy Rec" id="coding academy rec">Reccomendation</input>
+   </div>
+   <div class="contact">
+      <p>Would you like to Contacted back?</p>
+       <label for="yes">yes</label>
+       <input type="radio" name="yes" id="yes">
+       <label for="no">no</label>
+       <input type="radio" name="no" id="no">
+       
+       
+   </div>
+
+   <div class="submit">
+
+       <button onclick="handleClick()">Submit</button>
+    </form>
+    </div>
+</div>
+<script src="contact.js"></script>
 </body>
 </html>

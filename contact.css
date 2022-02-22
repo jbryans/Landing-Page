@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5%;
+    
+    
+}
+.email-comments{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    
+}
+label{
+    padding-bottom: 5%;
+}
+.email,.comments{
+    
+    margin: 5%;
+}
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    
+    margin: auto;
+}
+.box{
+    flex-direction: row;
+    
+   
+    
+
+}
+.submit{
+    padding-top: 5%;
+    margin: auto;
+}
+button{
+    margin: auto;
+    padding-top: 10%;
+}
